@@ -3,10 +3,9 @@ package com.mehmetpekdemir.mincostpath;
 /**
  * 
  * @author MEHMET PEKDEMIR
- * @since 03.30.2020
- *
+ * @since 1.0
  */
-public class Cell {
+final class Cell {
 
 	private final int row;
 	private final int column;

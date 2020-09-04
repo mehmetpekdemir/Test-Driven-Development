@@ -3,20 +3,21 @@ package com.mehmetpekdemir.fibonacci;
 /**
  * 
  * @author MEHMET PEKDEMIR
- * @since 03.30.2020
- *
+ * @since 1.0
  */
-public class Fibonacci {
+class Fibonacci {
 
-	//0 1 1 2 3 5 8 13 21 34 55
-	public int calculateFibonacci(int number) {
+	public int calculate(int number) {
+
 		if (number < 0) {
 			throw new IllegalArgumentException();
 		}
+
 		if (number <= 1) {
 			return number;
 		}
-		return calculateFibonacci(number - 1) + calculateFibonacci(number - 2);
+		
+		return calculate(number - 1) + calculate(number - 2);
 	}
 
 }

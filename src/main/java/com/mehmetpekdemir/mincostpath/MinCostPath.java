@@ -3,10 +3,9 @@ package com.mehmetpekdemir.mincostpath;
 /**
  * 
  * @author MEHMET PEKDEMIR
- * @since 03.30.2020
- *
+ * @since 1.0
  */
-public class MinCostPath {
+class MinCostPath {
 
 	public int find(int[][] matrix, Cell start, Cell target) {
 		validateIfTheCellIsOutOfMatrixBound(matrix, start);
@@ -24,9 +23,9 @@ public class MinCostPath {
 			return matrix[start.getRow()][start.getColumn()];
 		}
 
-		int rightPathCost = findMinCostPath(matrix, new Cell(start.getRow(), start.getColumn() + 1), target);
-		int downPathCost = findMinCostPath(matrix, new Cell(start.getRow() + 1, start.getColumn()), target);
-		int diagonalPathCost = findMinCostPath(matrix, new Cell(start.getRow() + 1, start.getColumn() + 1), target);
+		final int rightPathCost = findMinCostPath(matrix, new Cell(start.getRow(), start.getColumn() + 1), target);
+		final int downPathCost = findMinCostPath(matrix, new Cell(start.getRow() + 1, start.getColumn()), target);
+		final int diagonalPathCost = findMinCostPath(matrix, new Cell(start.getRow() + 1, start.getColumn() + 1), target);
 
 		final int min = Math.min(rightPathCost, Math.min(downPathCost, diagonalPathCost));
 
@@ -41,4 +40,5 @@ public class MinCostPath {
 			throw new IllegalArgumentException();
 		}
 	}
+
 }
