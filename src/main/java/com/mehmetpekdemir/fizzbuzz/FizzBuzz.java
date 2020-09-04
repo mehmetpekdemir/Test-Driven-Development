@@ -5,7 +5,7 @@ package com.mehmetpekdemir.fizzbuzz;
  * @author MEHMET PEKDEMIR
  * @since 1.0
  */
-public class FizzBuzz {
+class FizzBuzz {
 
 	public String calculate(int number) {
 

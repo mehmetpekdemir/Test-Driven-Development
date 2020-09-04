@@ -13,7 +13,7 @@ import com.mehmetpekdemir.fizzbuzz.FizzBuzz;
  * @author MEHMET PEKDEMIR
  * @since 1.0
  */
-public class FizzBuzzTest {
+class FizzBuzzTest {
 
 	private FizzBuzz fizzBuzz;
 
