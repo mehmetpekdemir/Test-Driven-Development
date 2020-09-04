@@ -16,6 +16,7 @@ class Fibonacci {
 		if (number <= 1) {
 			return number;
 		}
+		
 		return calculate(number - 1) + calculate(number - 2);
 	}
 

@@ -28,10 +28,14 @@ class FibonacciTest {
 	void findFibonacciNumber() {
 		assertAll("Tests Fibonacci",
 
-				() -> assertEquals(0, fibonacci.calculate(0)), () -> assertEquals(1, fibonacci.calculate(1)),
-				() -> assertEquals(1, fibonacci.calculate(2)), () -> assertEquals(2, fibonacci.calculate(3)),
-				() -> assertEquals(3, fibonacci.calculate(4)), () -> assertEquals(55, fibonacci.calculate(10)),
-				() -> assertEquals(89, fibonacci.calculate(11)), () -> assertEquals(28657, fibonacci.calculate(23)),
+				() -> assertEquals(0, fibonacci.calculate(0)), 
+				() -> assertEquals(1, fibonacci.calculate(1)),
+				() -> assertEquals(1, fibonacci.calculate(2)),
+				() -> assertEquals(2, fibonacci.calculate(3)),
+				() -> assertEquals(3, fibonacci.calculate(4)), 
+				() -> assertEquals(55, fibonacci.calculate(10)),
+				() -> assertEquals(89, fibonacci.calculate(11)),
+				() -> assertEquals(28657, fibonacci.calculate(23)),
 				() -> assertEquals(514229, fibonacci.calculate(29))
 
 		);
