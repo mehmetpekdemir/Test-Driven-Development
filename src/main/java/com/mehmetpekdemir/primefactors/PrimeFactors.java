@@ -7,12 +7,12 @@ import java.util.List;
 /**
  * 
  * @author MEHMET PEKDEMIR
- * @since 06.04.2020
- *
+ * @since 1.0
  */
-public class PrimeFactors {
+class PrimeFactors {
 
 	public static List<Integer> generate(int number) {
+
 		if (number <= 1) {
 			return Collections.emptyList();
 		}
@@ -26,7 +26,6 @@ public class PrimeFactors {
 		}
 
 		return primeFactors;
-
 	}
 
 }
